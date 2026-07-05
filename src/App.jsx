@@ -1,19 +1,19 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div style={{
-      background: "#020408",
-      color: "#00d4ff",
-      height: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontFamily: "monospace",
-      fontSize: "1.5rem",
-      letterSpacing: "4px"
-    }}>
-      ⚡ MARVEL COSMOS PORTFOLIO — DAY 1 INITIALIZED
+    <div>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Footer />
     </div>
-  );
+  );ss
 }
 
 export default App;
