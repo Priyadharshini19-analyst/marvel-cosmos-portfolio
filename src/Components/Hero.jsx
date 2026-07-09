@@ -1,13 +1,22 @@
+import styles from './Hero.module.css';
+
 function Hero() {
   return (
-    <section>
-      <p>Data Analyst and an aspiring AI Engineer</p>
-      <h1>I Build Intelligent Systems</h1>
-      <p>
-        Welcome to my portfolio. I create AI-powered
-        applications and immersive 3D web experiences I also have experience as a Data Analyst.
+    <section className={styles.hero}>
+      <p className={styles.eyebrow}>
+        AI Engineer &middot; Full Stack Developer
       </p>
-      <button>View Projects</button>
+      <h1 className={styles.title}>
+        I Build Intelligent Systems
+      </h1>
+      <p className={styles.subtitle}>
+        Welcome to my Marvel-themed portfolio. I create AI-powered
+        applications and immersive 3D web experiences.
+      </p>
+      <div className={styles.buttonGroup}>
+        <button className={styles.btnPrimary}>View Projects</button>
+        <button className={styles.btnOutline}>Download CV</button>
+      </div>
     </section>
   );
 }

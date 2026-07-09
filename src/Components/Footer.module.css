@@ -1,0 +1,57 @@
+/* ── FOOTER ─────────────────────────────── */
+.footer {
+  padding: var(--space-xl) var(--space-lg);
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--deep-space);
+}
+
+.logo {
+  font-family: var(--font-hud);
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: var(--arc-blue);
+}
+
+.copy {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+}
+
+.socialBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    8px 0, 100% 0,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0 100%, 0 8px
+  );
+}
+
+.socialBtn:hover {
+  border-color: var(--arc-blue);
+  color: var(--arc-blue);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
